@@ -1,0 +1,43 @@
+.cuadro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.cuadro {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border: 4px solid #1976d2;
+    border-radius: 12px;
+    background: #1976d2;
+}
+.cohete {
+    /* Animación para un rectángulo de 600x300 */
+    offset-path: path('M -30 -30 L 630 -30 L 630 330 L -30 330 Z');
+    position: absolute;
+    font-size: 48px;
+    
+    animation: recorrido-cuadro 2s linear infinite;
+    offset-rotate: auto 45deg;
+}
+.cohete img {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+@keyframes recorrido-cuadro {
+    25% {
+        offset-distance: 25%;
+    }
+    50% {
+        offset-distance: 50%; 
+    }
+    75% {
+        offset-distance: 75%; 
+    }
+    100% {
+        offset-distance: 100%; 
+    }
+}

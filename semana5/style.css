@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 60px;
+}
+
+    .tarjeta1{
+        background-color: coral;
+        border-top-left-radius: 53px;
+        border-bottom-right-radius: 53px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 2px 2px 2px 2px;
+    }
+    .tarjeta2{
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+        border-top-right-radius: 53px;
+        border-bottom-left-radius: 53px;
+        box-shadow: inset 2px 2px 2px red;
+    }
+    .tarjeta3{
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        border-top-left-radius: 53px;
+        border-bottom-right-radius: 53px;
+        box-shadow: 2px 2px 2px 2px;
+    }
+    .tarjeta4{
+        width: 200px;
+        height: 200px;
+        background-color: violet;
+        border-top-right-radius: 53px;
+        border-bottom-left-radius: 53px;
+        box-shadow: 2px 2px 2px 2px;
+    }
+
+@media screen and (width < 350px) {
+
+    .header{
+        font-size: 20px;
+        background-color: green;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+        .tarjeta1{
+            background-color: black;
+        }
+        .tarjeta2{
+            background-color: blue;
+        }
+        .tarjeta3{
+            background-color: gray;
+        }
+        .tarjeta4{
+            background-color: gray;
+        }
+    }

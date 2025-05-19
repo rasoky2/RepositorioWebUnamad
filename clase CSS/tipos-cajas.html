@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de cajas y posicionamiento en CSS</title>
+  <link rel="stylesheet" href="tipos-cajas.css">
+</head>
+<body>
+  <h1>Tipos de cajas y posicionamiento en CSS</h1>
+  <section>
+    <h2>Tipos de cajas</h2>
+    <ul>
+      <li><strong>Inline:</strong> Ocupa solo el ancho de su contenido.</li>
+      <li><strong>Block:</strong> Ocupa todo el ancho del contenedor.</li>
+      <li><strong>Inline-block:</strong> Ocupa el ancho de su contenido pero permite definir alto/ancho y respeta el flujo del texto.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Posicionamiento</h2>
+    <ul>
+      <li><strong>Static:</strong> Posición por defecto, sigue el flujo normal del documento.</li>
+      <li><strong>Relative:</strong> Se puede mover respecto a su posición original.</li>
+      <li><strong>Absolute:</strong> Se posiciona respecto a su contenedor posicionado más cercano.</li>
+      <li><strong>Fixed:</strong> Se posiciona respecto a la ventana del navegador.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Ejemplo visual</h2>
+    <div class="caja-ejemplo">
+      <div class="titulo-caja">Ejemplo de caja</div>
+      <div class="contenido-caja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Esta caja demuestra el modelo de caja y el posicionamiento.</div>
+    </div>
+  </section>
+  <section>
+    <h2>Ejemplo de posicionamiento</h2>
+    <div class="pos-container">
+      <div class="caja-pos static">Static</div>
+      <div class="caja-pos relative">Relative</div>
+      <div class="caja-pos-abs-container">
+        <div class="caja-pos absolute">Absolute (dentro de contenedor)</div>
+      </div>
+      <div class="caja-pos fixed">Fixed</div>
+    </div>
+  </section>
+</body>
+</html> 

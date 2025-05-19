@@ -1,0 +1,33 @@
+.titulo {
+	color: rgb(15, 150, 228);
+	font-size: 3vw;
+}
+
+.parrafo {
+	color: rgb(65, 65, 151);
+	font-size: 1.2rem;
+	width: 80%;
+	margin-bottom: 2vh;
+}
+
+.enlace-demo {
+	font-size: 1rem;
+	padding: 0.5em 1em;
+}
+
+.enlace-demo:link {
+	color: blue;
+}
+
+.enlace-demo:visited {
+	color: purple;
+}
+
+.enlace-demo:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+.enlace-demo:active {
+	color: red;
+}

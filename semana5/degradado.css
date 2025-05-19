@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  color: #1a4d8f;
+  margin-bottom: 2rem;
+}
+
+.degradados-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.degradados-container h3 {
+  width: 220px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  border: 1px solid #888;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 0;
+  box-shadow: 0 2px 8px #0001;
+}
+
+/* Degradado de abajo hacia arriba */
+.to-top {
+  background: linear-gradient(to top, coral, blanchedalmond);
+}
+
+/* Degradado de izquierda a derecha */
+.to-right {
+  background: linear-gradient(to right, blanchedalmond, blue);
+}
+
+/* Degradado de derecha a izquierda */
+.to-left {
+  background: linear-gradient(to left, blanchedalmond, blue);
+}
+
+/* Degradado de arriba hacia abajo */
+.to-bottom {
+  background: linear-gradient(to bottom, blanchedalmond, blue, pink);
+}
+
+/* Degradado en ángulo 45 grados */
+.to-deg {
+  background: linear-gradient(45deg, red 50%, green 25%);
+}
+
+/* Degradado usando radianes (ejemplo: 1rad) */
+.radian {
+  background: linear-gradient(1rad, orange, purple);
+}
+
+/* Degradado usando porcentaje en los colores */
+.radian-percent {
+  background: linear-gradient(90deg, yellow 30%, cyan 70%);
+}

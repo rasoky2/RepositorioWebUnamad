@@ -1,0 +1,49 @@
+/* CSS - Unidades de medida relativa y absoluta */
+
+.general {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.caja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  background: #e0e7ef;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+/* px: unidad absoluta, siempre mide igual */
+.caja.pe {
+  width: 200px;
+}
+
+/* em: relativo al font-size del padre (aquí .general, por defecto 1rem) */
+.caja.em {
+  width: 10em;
+  font-size: 3vw;
+}
+
+/* rem: relativo al font-size del elemento raíz (html) */
+.caja.rem {
+  width: 10rem;
+  font-size: 1.8rem;
+}
+
+/* vw: relativo al ancho del viewport (ventana) */
+.caja.vw {
+  width: 10vw;
+  background-color: #ffb3b3; /* rojo claro */
+  color: #222;
+}
+
+/* %: relativo al ancho del contenedor padre */
+.caja.por {
+  width: 70%;
+} 

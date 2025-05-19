@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro');
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+}
+
+h1 {
+  color: #1a4d8f;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.caja-ejemplo {
+  border: 2px solid #1a4d8f;
+  background: #e3f0fa;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.titulo-caja {
+  background: #ffb366;
+  color: #222;
+  padding: 0.5rem;
+  border-bottom: 1px solid #1a4d8f;
+  font-weight: bold;
+}
+
+.contenido-caja {
+  background: #ffe0b3;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.pos-container {
+  position: relative;
+  height: 300px;
+  background: #f0f4f8;
+  border: 1px dashed #aaa;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  overflow: visible;
+}
+
+.caja-pos {
+  width: 180px;
+  height: 50px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px #0001;
+}
+
+/* Static: posición por defecto */
+.caja-pos.static {
+  position: static;
+  background: #b3e6ff;
+  border: 2px solid #1a4d8f;
+}
+
+/* Relative: se puede mover respecto a su posición original */
+.caja-pos.relative {
+  position: relative;
+  left: 40px;
+  top: 10px;
+  background: #d1ffb3;
+  border: 2px solid #3a8f1a;
+}
+
+/* Contenedor para absolute */
+.caja-pos-abs-container {
+  position: relative;
+  height: 100px;
+  background: #f9e6ff;
+  border: 1px dashed #b36ff7;
+  margin-bottom: 1rem;
+}
+
+/* Absolute: respecto al contenedor posicionado */
+.caja-pos.absolute {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ffd1b3;
+  border: 2px solid #ff8c1a;
+}
+
+/* Fixed: respecto a la ventana, siempre visible */
+.caja-pos.fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #ffb3b3;
+  border: 2px solid #d11a1a;
+  z-index: 1000;
+}
+
+/* Puedes agregar más ejemplos de posicionamiento aquí si lo deseas */ 
